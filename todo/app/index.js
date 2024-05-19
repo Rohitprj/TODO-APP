@@ -130,7 +130,7 @@ export default function App() {
                             marginTop: 5,
                             fontSize: 20
                         }}
-                            placeholder="Personal work no 1"
+                            placeholder="Personal work no 2"
                         />
                     </View>
                 </View>
@@ -155,7 +155,7 @@ export default function App() {
                             marginTop: 5,
                             fontSize: 20
                         }}
-                            placeholder="Personal work no 1"
+                            placeholder="Personal work no 3"
                         />
                     </View>
                 </View>
@@ -180,7 +180,7 @@ export default function App() {
                             marginTop: 5,
                             fontSize: 20
                         }}
-                            placeholder="Personal work no 1"
+                            placeholder="Personal work no 4"
                         />
                     </View>
                 </View>
@@ -205,7 +205,7 @@ export default function App() {
                             marginTop: 5,
                             fontSize: 20
                         }}
-                            placeholder="Personal work no 1"
+                            placeholder="Personal work no 5"
                         />
                     </View>
                 </View>
@@ -230,7 +230,7 @@ export default function App() {
                             marginTop: 5,
                             fontSize: 20
                         }}
-                            placeholder="Personal work no 1"
+                            placeholder="Personal work no 6"
                         />
                     </View>
                 </View>
