@@ -7,9 +7,12 @@ export default function App() {
                 style={{
                     backgroundColor: "#e6e281",
                     height: 80,
-                    width: 360,
+                    width: 300,
                     display: "flex",
-                    flexDirection: "row"
+                    flexDirection: "row",
+                    marginLeft:32,
+                    borderTopLeftRadius:50,
+                    borderBottomRightRadius:50
                 }}
             >
 
@@ -18,7 +21,7 @@ export default function App() {
                         fontSize: 40,
                         textAlign: "center",
                         marginTop: 12,
-                        marginLeft: 128
+                        marginLeft: 100
                     }}
                 >
                     TO
@@ -39,44 +42,58 @@ export default function App() {
 
             {/* input box and button */}
 
+
             <View style={{
-                backgroundColor: "#e6e281",
+                backgroundColor: "red",
                 height: 80,
                 width: 325,
                 marginTop: 40,
                 marginLeft: 19,
-                borderRadius: 50,
-                flexDirection: "row"
-            }}
-            >
-                <TextInput
-                    placeholder="What do you need to do?"
-                    style={{
-                        marginLeft: 20,
-                        fontSize: 15
-                    }}
-                />
-                <TouchableOpacity
-                    style={{
-                        marginLeft: 52,
-                        backgroundColor: "#81b3e6",
-                        height: 80,
-                        width: 90,
-                        borderTopRightRadius: 50,
-                        borderBottomEndRadius: 50
-                    }}
+                borderRadius: 50
+            }}>
+                <View style={{
+                    backgroundColor: "#e6e281",
+                    height: 80,
+                    width: 235,
+                    // marginTop: 40,
+                    // marginLeft: 19,
+                    // borderRadius: 50,
+                    borderTopLeftRadius:50,
+                    borderBottomLeftRadius:50,
+                    flexDirection: "row",
+                    // flexBasis:1
+                }}
                 >
-                    <Text
+                    <TextInput
+                        placeholder="What do you need to do?"
                         style={{
-                            color: "white",
-                            fontSize: 30,
-                            fontWeight: 500,
-                            marginTop: 17,
-                            marginLeft: 12
-                        }}>
-                        ADD
-                    </Text>
-                </TouchableOpacity>
+                            // backgroundColor:"blue",
+                            marginLeft: 20,
+                            fontSize: 15
+                        }}
+                    />
+                    <TouchableOpacity
+                        style={{
+                            marginLeft: 52,
+                            backgroundColor: "#81b3e6",
+                            height: 80,
+                            width: 90,
+                            borderTopRightRadius: 50,
+                            borderBottomEndRadius: 50
+                        }}
+                    >
+                        <Text
+                            style={{
+                                color: "white",
+                                fontSize: 30,
+                                fontWeight: 500,
+                                marginTop: 17,
+                                marginLeft: 12
+                            }}>
+                            ADD
+                        </Text>
+                    </TouchableOpacity>
+                </View>
             </View>
 
             {/* List - area */}
