@@ -7,7 +7,13 @@ export default function App() {
     const [age, enterAge] = useState("");
 
       const alertOption = () =>{
-        alert("Login sucessfully")
+        if(name!==""){
+            alert("Login sucessfully\n"+name+"\n"+age)
+        }
+        else{
+            alert("Name not defined")
+        }
+        
       }
 
     return (
@@ -24,9 +30,11 @@ export default function App() {
             <TextInput
                 style={{
                     border: "2px solid black",
+                    borderRadius:12,
                     height: 50,
                     fontSize: 20,
-                    paddingLeft:10
+                    paddingLeft:10,
+                    fontWeight:100
                 }}
                 onChangeText={enterName}
                 value={name}
@@ -42,10 +50,12 @@ export default function App() {
             <TextInput
                 style={{
                     border: "2px solid black",
+                    borderRadius:12,
                     height: 50,
                     fontSize: 20,
                     paddingLeft:10,
-                    marginBottom:15
+                    marginBottom:15,
+                    fontWeight:100
                 }}
                 onChangeText={enterAge}
                 value={age}
