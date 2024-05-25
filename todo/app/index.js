@@ -1,289 +1,60 @@
-import { Button, Text, TextInput, TouchableOpacity, View } from "react-native"
+import { useState } from "react"
+import { TextInput, View, Text, Alert, Button } from "react-native"
 
 export default function App() {
+
+    const [name, enterName] = useState("");
+    const [age, enterAge] = useState("");
+
+      const alertOption = () =>{
+        alert("Login sucessfully")
+      }
+
     return (
-        <View>
-            <View
+        <View
+            style={{
+                padding: 20
+            }}
+        >
+            <Text style={{
+                marginBottom: 5
+            }}>
+                Name
+            </Text>
+            <TextInput
                 style={{
-                    backgroundColor: "#e6e281",
-                    height: 80,
-                    width: 300,
-                    display: "flex",
-                    flexDirection: "row",
-                    marginLeft:32,
-                    borderTopLeftRadius:50,
-                    borderBottomRightRadius:50
+                    border: "2px solid black",
+                    height: 50,
+                    fontSize: 20,
+                    paddingLeft:10
                 }}
-            >
+                onChangeText={enterName}
+                value={name}
+                placeholder="Enter your name"
+            />
 
-                <Text
-                    style={{
-                        fontSize: 40,
-                        textAlign: "center",
-                        marginTop: 12,
-                        marginLeft: 100
-                    }}
-                >
-                    TO
-                </Text>
-
-                <Text
-                    style={{
-                        fontSize: 40,
-                        textAlign: "center",
-                        marginTop: 12,
-                        color: "orange"
-                    }}
-                >
-                    DO
-                </Text>
-
-            </View>
-
-            {/* input box and button */}
-
-
-            <View style={{
-                backgroundColor: "red",
-                height: 80,
-                width: 325,
-                marginTop: 40,
-                marginLeft: 19,
-                borderRadius: 50
+            <Text style={{
+                marginTop:15,
+                marginBottom: 5
             }}>
-                <View style={{
-                    backgroundColor: "#e6e281",
-                    height: 80,
-                    width: 235,
-                    // marginTop: 40,
-                    // marginLeft: 19,
-                    // borderRadius: 50,
-                    borderTopLeftRadius:50,
-                    borderBottomLeftRadius:50,
-                    flexDirection: "row",
-                    // flexBasis:1
+                age
+            </Text>
+            <TextInput
+                style={{
+                    border: "2px solid black",
+                    height: 50,
+                    fontSize: 20,
+                    paddingLeft:10,
+                    marginBottom:15
                 }}
-                >
-                    <TextInput
-                        placeholder="What do you need to do?"
-                        style={{
-                            // backgroundColor:"blue",
-                            marginLeft: 20,
-                            fontSize: 15
-                        }}
-                    />
-                    <TouchableOpacity
-                        style={{
-                            marginLeft: 52,
-                            backgroundColor: "#81b3e6",
-                            height: 80,
-                            width: 90,
-                            borderTopRightRadius: 50,
-                            borderBottomEndRadius: 50
-                        }}
-                    >
-                        <Text
-                            style={{
-                                color: "white",
-                                fontSize: 30,
-                                fontWeight: 500,
-                                marginTop: 17,
-                                marginLeft: 12
-                            }}>
-                            ADD
-                        </Text>
-                    </TouchableOpacity>
-                </View>
-            </View>
-
-            {/* List - area */}
-
-
-            <View style={{
-                backgroundColor: "#e6e281",
-                height: 480,
-                width: 322,
-                marginTop: 30,
-                marginLeft: 19,
-                borderRadius: 50
-            }}>
-                <View>
-                    <View style={{
-                        height: 45,
-                        width: 290,
-                        marginLeft: 16,
-                        marginTop: 20
-                    }}>
-                        <TextInput style={{
-                            width: 230,
-                            height: 40,
-                            marginLeft: 25,
-                            marginTop: 5,
-                            fontSize: 20
-                        }}
-                            placeholder="Personal work no 1"
-                        />
-                    </View>
-                </View>
-                <View style={{
-                    backgroundColor: "#81b3e6",
-                    marginLeft: 30,
-                    height: 2,
-                    width: 260
-                }}>
-
-                </View>
-                <View>
-                    <View style={{
-                        height: 45,
-                        width: 290,
-                        marginLeft: 16,
-                        marginTop: 20
-                    }}>
-                        <TextInput style={{
-                            width: 230,
-                            height: 40,
-                            marginLeft: 25,
-                            marginTop: 5,
-                            fontSize: 20
-                        }}
-                            placeholder="Personal work no 2"
-                        />
-                    </View>
-                </View>
-                <View style={{
-                    backgroundColor: "#81b3e6",
-                    marginLeft: 30,
-                    height: 2,
-                    width: 260
-                }}>
-
-                </View><View>
-                    <View style={{
-                        height: 45,
-                        width: 290,
-                        marginLeft: 16,
-                        marginTop: 20
-                    }}>
-                        <TextInput style={{
-                            width: 230,
-                            height: 40,
-                            marginLeft: 25,
-                            marginTop: 5,
-                            fontSize: 20
-                        }}
-                            placeholder="Personal work no 3"
-                        />
-                    </View>
-                </View>
-                <View style={{
-                    backgroundColor: "#81b3e6",
-                    marginLeft: 30,
-                    height: 2,
-                    width: 260
-                }}>
-
-                </View><View>
-                    <View style={{
-                        height: 45,
-                        width: 290,
-                        marginLeft: 16,
-                        marginTop: 20
-                    }}>
-                        <TextInput style={{
-                            width: 230,
-                            height: 40,
-                            marginLeft: 25,
-                            marginTop: 5,
-                            fontSize: 20
-                        }}
-                            placeholder="Personal work no 4"
-                        />
-                    </View>
-                </View>
-                <View style={{
-                    backgroundColor: "#81b3e6",
-                    marginLeft: 30,
-                    height: 2,
-                    width: 260
-                }}>
-
-                </View><View>
-                    <View style={{
-                        height: 45,
-                        width: 290,
-                        marginLeft: 16,
-                        marginTop: 20
-                    }}>
-                        <TextInput style={{
-                            width: 230,
-                            height: 40,
-                            marginLeft: 25,
-                            marginTop: 5,
-                            fontSize: 20
-                        }}
-                            placeholder="Personal work no 5"
-                        />
-                    </View>
-                </View>
-                <View style={{
-                    backgroundColor: "#81b3e6",
-                    marginLeft: 30,
-                    height: 2,
-                    width: 260
-                }}>
-
-                </View><View>
-                    <View style={{
-                        height: 45,
-                        width: 290,
-                        marginLeft: 16,
-                        marginTop: 20
-                    }}>
-                        <TextInput style={{
-                            width: 230,
-                            height: 40,
-                            marginLeft: 25,
-                            marginTop: 5,
-                            fontSize: 20
-                        }}
-                            placeholder="Personal work no 6"
-                        />
-                    </View>
-                </View>
-                <View style={{
-                    backgroundColor: "#81b3e6",
-                    marginLeft: 30,
-                    height: 2,
-                    width: 260
-                }}>
-
-                </View>
-                <View style={{
-                    height: 35,
-                    width: 160,
-                    marginLeft: 140,
-                    marginTop: 25
-                }}>
-                    <TouchableOpacity style={{
-                        height: 25,
-                        width: 120,
-                        marginLeft: 35,
-                        marginTop: 4
-                    }}>
-                        <Text style={{
-                            fontSize: 16,
-                            marginTop: 2,
-                            color: "orange",
-                            fontWeight: 800
-                        }}>
-                            Clear completed
-                        </Text>
-                    </TouchableOpacity>
-                </View>
-
-            </View>
-
+                onChangeText={enterAge}
+                value={age}
+                placeholder="Enter your age"
+            />
+            <Button
+            title="Login"
+            onPress={alertOption}
+            />
         </View>
     )
 }
