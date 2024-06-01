@@ -81,7 +81,7 @@ export default function App() {
             arr2.push({title:input})
             setTodo(arr2)
 
-            setNum("");
+            setInput("");
     }
 
     return (
